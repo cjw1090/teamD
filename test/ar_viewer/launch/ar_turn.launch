@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find ar_viewer)/launch/ar_viewer.launch" />
+  <include file="$(find xycar_ultrasonic)/launch/xycar_ultrasonic.launch" />
+  <include file="$(find xycar_motor)/launch/xycar_motor.launch" />
+  <node name="ar_turn"  pkg="ar_viewer" type="ar_turn.py"   output="screen" />
+
+</launch>
